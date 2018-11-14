@@ -1,3 +1,6 @@
+Some notes about using the SSH Jump feature:
+
+```
 centos@zoobox /home/centos/soft/terraform-aws-openshift.old [sshjumper] $ cat modules/openshift/10-sshconfig.tf
 // Collect the vars needed for templating the sshconfig.cfg file
 data "template_file" "sshconfig" {
@@ -116,4 +119,4 @@ circleci:
         circleci build --job lint
 
 .PHONY: sample
-
+```
